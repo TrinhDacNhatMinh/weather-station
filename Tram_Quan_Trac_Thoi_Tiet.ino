@@ -1356,17 +1356,6 @@ void checkThreshold(int temp, int humi, int rain, int wind, int dust) {
   if (alertActive) {
     alertMessages = "";
 
-    // debug
-    // alertMessages += "Temp: " + String(temp) + " | " + String(EtempThreshold1) + "-" + String(EtempThreshold2) + "\n";
-
-    // alertMessages += "Humi: " + String(humi) + " | " + String(EhumiThreshold1) + "-" + String(EhumiThreshold2) + "\n";
-
-    // alertMessages += "Rain: " + String(rain) + " | " + String(ErainThreshold1) + "-" + String(ErainThreshold2) + "\n";
-
-    // alertMessages += "Wind: " + String(wind) + " | " + String(EwindThreshold1) + "-" + String(EwindThreshold2) + "\n";
-
-    // alertMessages += "Dust: " + String(dust) + " | " + String(EdustThreshold1) + "-" + String(EdustThreshold2) + "\n";
-
     if (tempAlert) alertMessages += "Nhiet do vuot nguong\n";
     if (humiAlert) alertMessages += "Do am vuot nguong\n";
     if (rainAlert) alertMessages += "Luong mua vuot nguong\n";
